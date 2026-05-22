@@ -9,8 +9,7 @@
   <img src="https://img.shields.io/badge/DACON-구조물%20안정성%20추론-2563EB?style=for-the-badge" />
   <img src="https://img.shields.io/badge/최종%20순위-16등-16A34A?style=for-the-badge" />
   <img src="https://img.shields.io/badge/상위-4%25-F97316?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/대표%20제출%20LogLoss-0.01903-7C3AED?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/팀%20베스트%20LogLoss-0.01756-DC2626?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Private%20LogLoss-0.01903-7C3AED?style=for-the-badge" />
 </p>
 
 <br />
@@ -30,8 +29,7 @@ front / top 두 시점 이미지를 기반으로 구조물의 안정·붕괴 확
 |---|---|
 | 최종 순위 | 16등 |
 | 전체 성과 | 상위 4% |
-| 리더보드 대표 제출 점수 | Private LogLoss 0.01903 |
-| 팀 내 베스트 모델 점수 | Private LogLoss 0.01756 |
+| 리더보드 점수 | Private LogLoss 0.01903 |
 | 팀 구성 | 5인 팀 |
 | 진행 기간 | 2026.03.03 ~ 2026.03.30 |
 
@@ -39,7 +37,7 @@ front / top 두 시점 이미지를 기반으로 구조물의 안정·붕괴 확
 
 ## Best Pipeline
 
-팀 내에서 가장 좋은 성능을 낸 학습 방향은 [`dacon-structural-stability`](https://github.com/Dacon-contest/dacon-structural-stability) 레포에 정리된 대규모 Vision Backbone 기반 파이프라인입니다.
+최종 성능 개선을 위해 [`dacon-structural-stability`](https://github.com/Dacon-contest/dacon-structural-stability) 레포에 정리된 대규모 Vision Backbone 기반 학습·추론 파이프라인을 중심으로 실험했습니다.
 
 - EVA-Giant / DINOv2 / EVA02 계열 대형 Vision Backbone 실험
 - front / top 이미지를 같은 백본으로 인코딩하는 Shared Backbone Dual-View 구조
@@ -68,7 +66,7 @@ front / top 두 시점 이미지를 기반으로 구조물의 안정·붕괴 확
 
 | Repository | 설명 |
 |---|---|
-| [dacon-structural-stability](https://github.com/Dacon-contest/dacon-structural-stability) | 팀 내 최고 성능 방향의 대규모 Vision Backbone 학습·추론 파이프라인 |
+| [dacon-structural-stability](https://github.com/Dacon-contest/dacon-structural-stability) | 대규모 Vision Backbone 기반 학습·추론 파이프라인 |
 | [dacon-data-segmentation_and_train](https://github.com/Dacon-contest/dacon-data-segmentation_and_train) | Segmentation 전처리 및 구조물 마스크 기반 학습 실험 |
 | [dual-view-stability-classifier](https://github.com/Dacon-contest/dual-view-stability-classifier) | front / top Dual-View 구조물 안정성 분류 모델 실험 |
 | [dacon-structure-stability-ai](https://github.com/Dacon-contest/dacon-structure-stability-ai) | 초기 베이스라인 및 실험 아카이브 |
